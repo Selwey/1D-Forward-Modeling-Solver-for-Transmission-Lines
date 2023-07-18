@@ -1,6 +1,7 @@
 Introduction
 ---
 The code is a parallel Fortran program targeted at the 1D forward modeling specifically designed for overhead transmission lines.
+
 It can accurately calculate electromagnetic fields excited by overhead transmission lines under various factors, including the design parameters, sag, and orientation of transmission lines.
 
 Prerequisites
@@ -16,9 +17,17 @@ The program consists of five **f90** files, which are as follows:
 - ***module_GS_HK.f90***: This file saves Hankel sampling points and weights, and calculates Gauss points and Gauss weights.
 - ***module_parameter_set.f90***: This file sets parameters used during forward modeling.
 
+In addition, there is a script file named ***FORWARD***, which contains commands for compilation and execution.
+
 Usage
 ---
-To run the program, the user needs to provide three files: the model file, the data template file, and the configuration file. Then use the flowing command to run emfem:
+To run the program, you first need to set parameters in ***module_parameter_set.f90***. Parameters include power-line parameters, receiver parameters, model parameters, parameters related to Gauss-Legendre integration and Hankel transform. And then you need to enter the following command at the terminal:
+
+    $ sh FORWARD
+
+The output file is ***response***, which records the electromagnetic field values at each observation point.
+
+The columns from left to right represent x coordinate, y coordinate, z coordinate, real part of E<sub>x</sub>, imaginary part of E<sub>x</sub>, real part of E<sub>y</sub>, imaginary part of E<sub>y</sub>, real part of E<sub>z</sub>, imaginary part of E<sub>z</sub>, real part of H<sub>x</sub>, imaginary part of H<sub>x</sub>, real part of H<sub>y</sub>, imaginary part of H<sub>y</sub>, real part of H<sub>z</sub>, imaginary part of H<sub>z</sub>, respectively.
 
 Author
 ---
