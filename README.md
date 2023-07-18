@@ -7,4 +7,4 @@ Before using this code, you need to install **gfotran compiler** and **OpenMP**.
 # Author
 - Name: Siwei Zhu
 - Affiliation: China University of Geosciences, Wuhan, China
-- Email: [selwey1996@gmail.com](url)
+- Email: [selwey1996@gmail.com]()
