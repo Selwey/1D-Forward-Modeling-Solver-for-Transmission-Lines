@@ -12,4 +12,4 @@ Before using this code, you need to install **gfotran compiler** and **OpenMP**.
 - Email: selwey1996@gmail.com
 
 # License
-This code is distributed under GPL License. Please see the file [LICENSE]() for more details.
+This code is distributed under GPL License. Please see the file [LICENSE](./LICENSE) for more details.
