@@ -21,7 +21,7 @@ In addition, there is a script file named ***FORWARD***, which contains commands
 
 Usage
 ---
-To run the program, you first need to set parameters in ***module_parameter_set.f90***. Parameters include power-line parameters, receiver parameters, model parameters, parameters related to Gauss-Legendre integration and Hankel transform. And then you need to enter the following command at the terminal:
+To run the program, first you need to set parameters in ***module_parameter_set.f90***. Parameters include power-line parameters, receiver parameters, model parameters, parameters associated with Gauss-Legendre integration and Hankel transform. And then you only need to enter the following command at the terminal:
 
     $ sh FORWARD
 
