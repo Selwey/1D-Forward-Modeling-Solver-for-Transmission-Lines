@@ -18,7 +18,7 @@ The program consists of five **f90** files, which are as follows:
 
 Usage
 ---
-<font color="green"> To run the program, the user needs to provide three files: the model file, the data template file, and the configuration file. Then use the flowing command to run emfem:
+To run the program, the user needs to provide three files: the model file, the data template file, and the configuration file. Then use the flowing command to run emfem:
 
 Author
 ---
