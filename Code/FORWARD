@@ -1,0 +1,5 @@
+#!/bin/sh
+
+gfortran -fopenmp -o generate module_parameter_set.f90 module_GS_Hk.f90 module_coor_trans_intrans.f90 module_freq_forward.f90 main.f90 
+./generate
+
