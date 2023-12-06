@@ -199,7 +199,7 @@ program main
     
     call cpu_time(t2)
     !$ t4 = omp_get_wtime()
-    write(*,*) 'The cup time is:', t2-t1, 's'
+    write(*,*) 'The cpu time is:', t2-t1, 's'
     !$ write(*,*) 'The run time is:', t4-t3, 's'
 
 end program main
